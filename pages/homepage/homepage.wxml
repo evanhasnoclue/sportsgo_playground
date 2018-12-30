@@ -1,14 +1,21 @@
 <!--pages/homepage/homepage.wxml-->
 
     <view id="origin">
-        <view id="current">
+        <view id="current"><view id="subcurrent">
           <image class="logo" src="../../images/Logo Decathlon.jpg"/>
-          <view class="title">SPORTS
-          <view class="title2"> PLAYGROUND </view></view>
-        </view>
+          <view class="title">SPORTS</view>
+          <view class="title2">PLAYGROUND</view>
+        </view></view>
     </view>
 
 <view class="element"><view class="pre-element" style="background: linear-gradient(rgba(80,166,252,0.7), rgba(0,0,0,0)),url(http://entre-jeunes.com/rdl/wp-content/uploads/2016/08/volleyball-plage-2016.jpg) 0 0 repeat; "></view>沙滩排球</view>
 <view class="element"><view class="pre-element" style="top: -10%; background: linear-gradient(rgba(80,166,252,0.2), rgba(0,0,0,0)),url(https://contents.mediadecathlon.com/p1259379/tennis.jpg?f=1000x1000) 0 0 repeat; "></view>户外网球</view>
 <view class="element"><view class="pre-element" style="background: linear-gradient(rgba(80,166,252,0.5), rgba(0,0,0,0)),url(https://pixl.decathlon.com.cn/s582466/sports_page_football_pc.jpg?f=400*800) 0 0 repeat;"></view>绿茵足球</view>
 <view class="element"><view class="pre-element" style="top:-90%; left: -100%;background: linear-gradient(rgba(80,166,255,0.3), rgba(0,0,0,0)),url(https://contents.mediadecathlon.com/p1425548//lexique_du_basketball_tarmak_decathlon.jpg) 0 0 repeat; "></view>街头篮球</view>
+
+
+ <view style="width:100%; height:100px; background-color:#fff; overflow:hidden; margin-top: -50px;">
+
+    <view style="width:500px; height:300px; background-color:#ddd; transform:skewY(170deg); position:relative; margin:0px 0px 0px 0px; top:40%"></view>
+
+ </view>

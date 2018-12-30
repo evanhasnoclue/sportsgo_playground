@@ -20,11 +20,16 @@
             transform:skewY(170deg);
 
         }
+        #subcurrent{
+            position: absolute;
+            left: 0;
+            top: 55px;
+          width:100vw;  
+          transform: skewY(-170deg);    
+        }
+
         .title{
-          margin-top:88px;
-          display:inline-block;
           font-style:italic;
-          transform: skewY(-170deg);
         }
 
         .title2{
@@ -32,13 +37,8 @@
         }
 
         .logo{
-            position: absolute;
-            right: 125px;
-            top: 55px;
-            width: 40px;
           height:20px;
           width:70px;  
-          transform: skewY(-170deg);    
         }
 
 body
@@ -82,3 +82,5 @@ h1
     transform: skewY(+10deg);
     background-size:800px 500px !important;
 }
+
+
