@@ -1,0 +1,61 @@
+.box {
+    width:100vw;
+    height: 82vh;
+    /*white-space 不能丢  */
+    white-space: nowrap;
+    border: 0px solid grey;
+    box-sizing: border-box
+}
+.box-item {
+    width: 100%;
+    height:100%;
+    border:2rpx solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    color:#585858;
+    background-color: #eeeef1
+}
+
+.box-item-s {
+    width: 100%;
+    height:100%;
+    border:2rpx solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    color:#585858;
+    background-color: #9cd5f0
+    /* #0082c3 */
+}
+
+.col{
+  width:30vw;
+  display:flex;
+  flex-direction: column;
+  display: inline-block;
+
+}
+
+/* page,
+.page, */
+/* .page__bd{
+    height: 100%;
+} */
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.profilebox{
+  height: 100px;
+  width:100px;
+}
+
+.explaination{
+  font-size:10px;
+  color:#666666;
+}

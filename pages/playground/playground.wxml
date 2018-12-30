@@ -1,0 +1,14 @@
+<!--pages/playground/playground.wxml-->
+<text>pages/playground/playground.wxml</text>
+    <view class="allcards">
+        <view class="card" style="height:140px; background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/background.png);"></view>
+
+        <view class="card" style="height:140px;background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)),url(#);"></view>
+
+        <view class="card" style="height:140px; background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)),url(#);"></view>
+
+        <view class="card" style="height:140px;  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)),url(#);"></view>
+    </view>
+  
+        <view id="current" style="margin-top:13px; height: 1px">
+        </view>
