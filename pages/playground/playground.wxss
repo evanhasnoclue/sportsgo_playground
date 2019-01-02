@@ -1,0 +1,14 @@
+/* pages/playground/playground.wxss */
+        .card{
+            margin-top: 20px;
+            transform:skewY(170deg); 
+            flex: 0 0 100%;
+            background-size: repeat;      
+        }
+
+        .allcards{
+          display:flex;
+          justify-content: space-around;
+          width:100%;
+          flex-flow: row wrap;
+        }

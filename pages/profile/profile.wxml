@@ -1,0 +1,65 @@
+<view class="weui-cell">
+  <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+    <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKwqOJ6wnhce5LzwvX6nqI2vUibaicb4pwNEJtzQ69y3j4IHibQq4VbK89jskysU2Hkndk3ZJaSt849A/132" style="width: 50px; height: 50px; display: block" />
+  </view>
+  <view class="weui-cell__bd">
+    <view style="margin-top: 10px; display:flex">ada</view> 
+    <view style="display:flex;">
+    <text style="font-size: 15px;color: #585858;">shanghai</text>
+  <view> <image src="../../images/woman.png" style="width:20px;height:20px"/></view>
+  </view>
+</view>
+</view>
+
+<view>
+<scroll-view class="box" scroll-x="true" >
+  <view class="col">
+    <view class="box-item-s" >6:00-7:00</view>
+    <view class="box-item-s" >7:00-8:00</view>
+    <view class="box-item-s" >8:00-9:00</view>
+    <view class="box-item-s" >9:00-10:00</view>
+  </view>
+  <view class="col">
+    <view class="box-item" >1</view>
+    <view class="box-item" >1</view>
+    <view class="box-item" >1</view>
+    <view class="box-item" >1</view>
+  </view>
+  <view class="col">
+    <view class="box-item" >2</view>
+    <view class="box-item" >2</view>
+    <view class="box-item" >2</view>
+    <view class="box-item" >2</view>
+  </view>
+   <view class="col">
+    <view class="box-item" >3</view>
+    <view class="box-item" >3</view>
+    <view class="box-item" >3</view>
+    <view class="box-item" >3</view>
+  </view>
+   <view class="col">
+    <view class="box-item" >4</view>
+    <view class="box-item" >4</view>
+    <view class="box-item" >4</view>
+    <view class="box-item" >4</view>
+  </view>
+   <view class="col">
+    <view class="box-item" >5</view>
+    <view class="box-item" >5</view>
+    <view class="box-item" >5</view>
+    <view class="box-item" >5</view>
+  </view>
+   <view class="col">
+    <view class="box-item" >6</view>
+    <view class="box-item" >6</view>
+    <view class="box-item" >6</view>
+    <view class="box-item" >6</view>
+  </view>
+  <view class="col">
+    <view class="box-item" >7</view>
+     <view class="box-item" >7</view>
+      <view class="box-item" >7</view>
+     <view class="box-item" >7</view>
+  </view>
+</scroll-view>
+</view>
