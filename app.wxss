@@ -1,5 +1,5 @@
 /**app.wxss**/
-
+@import "colorui.wxss";
 @import 'weui.wxss' ;
 
 .container {

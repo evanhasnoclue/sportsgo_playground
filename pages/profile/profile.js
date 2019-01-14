@@ -1,3 +1,4 @@
+var Bmob = require('../../utils/Bmob-1.6.7.min.js')
 // pages/homepage/homepage.js
 Page({
 
@@ -14,7 +15,10 @@ Page({
    */
 
   onLoad: function (options) {
-
+    const query = Bmob.Query("_User");
+    query.find().then(res => {
+      console.log(res)
+    });
   },
 
   /**

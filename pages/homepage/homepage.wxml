@@ -14,7 +14,7 @@
 <view class="element"><view class="pre-element" style="top:-90%; left: -100%;background: linear-gradient(rgba(80,166,255,0.3), rgba(0,0,0,0)),url(https://contents.mediadecathlon.com/p1425548//lexique_du_basketball_tarmak_decathlon.jpg) 0 0 repeat; "></view>街头篮球</view>
 
 
- <view style="width:100%; height:100px; background-color:#fff; overflow:hidden; margin-top: -50px;">
+ <view style="width:100%; height:80px; background-color:#fff; overflow:hidden; margin-top: -50px;">
 
     <view style="width:500px; height:300px; background-color:#ddd; transform:skewY(170deg); position:relative; margin:0px 0px 0px 0px; top:40%"></view>
 

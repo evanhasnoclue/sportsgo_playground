@@ -1,2 +1,21 @@
-<!--pages/mainpage/mainpage.wxml-->
-<view id="element3">沙滩排球</view>
+<card class="article {{isCard?'no-card':''}}">
+  <item wx:for="1" wx:key class="shadow">
+    <view class="title">沙滩排球</view>
+    <view class="content">
+      <image src="http://entre-jeunes.com/rdl/wp-content/uploads/2016/08/volleyball-plage-2016.jpg" mode="aspectFill"></image>
+      <view class="desc">
+        <view class='text-content'> 这是一个专为你在阳光下展开双臂所准备的运动场所，了解一下就OK！</view>
+        <view>
+          <tag class='bg-red light sm round'>5人场地</tag>
+          <tag class='bg-green light sm round'>10人场地</tag>
+        </view>
+      </view>
+    </view>
+  </item>
+</card>
+
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <item class="{{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    Tab{{index}}
+  </item>
+</scroll-view>
