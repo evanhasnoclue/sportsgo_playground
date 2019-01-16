@@ -16,6 +16,26 @@
 
 <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
   <item class="{{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
-    Tab{{index}}
+    Day{{index+1}}
   </item>
 </scroll-view>
+
+<view class="cardp">
+<view class="left"><text class="time1">18:00-19:00</text></view>
+<view class="right"><text class="require">￥37</text><button class='buttom-book'>预约</button></view>
+</view>
+
+<view class="cardp">
+<view class="left"><text class="time1">19:00-20:00</text></view>
+<view class="right"></view>
+</view>
+
+<view class="cardp">
+<view class="left"><text class="time1">20:00-21:00</text></view>
+<view class="right"></view>
+</view>
+
+<view class="cardp">
+<view class="left"><text class="time1">21:00-22:00</text></view>
+<view class="right"></view>
+</view>

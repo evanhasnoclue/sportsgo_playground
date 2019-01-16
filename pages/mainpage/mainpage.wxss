@@ -51,4 +51,73 @@ h1
     transform: skewY(+10deg);
 }
 
+
+
+.cardp
+{
+margin:auto;
+height:3rem;
+width: 90%;
+background-color: red;
+margin-top:13px;
+display:flex;
+justify-content: space-around;
+}
+
+.left
+{
+  width: 40%;
+  height: 100%;
+  background-color:#888;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right
+{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  
+}
+
+.time1
+{
+  color:azure;
+  font-size: 20px;
+
+}
+
+.require
+{
+  color:grey;
+  font-size:20px;
+  text-align: center;
+  align-items: center;
+
+
+
+}
+
+.buttom-book
+{
+  text-align:center;
+  color:#39b54a;
+  border-radius: 5000rpx;
+  float: right;
+  font-size:18px;
+  border:#39b54a;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
 /* http://entre-jeunes.com/rdl/wp-content/uploads/2016/08/volleyball-plage-2016.jpg */

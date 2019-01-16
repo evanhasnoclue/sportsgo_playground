@@ -8,12 +8,23 @@ Page({
   data: {
 
   },
+  tabSelect(e) {
+    console.log(e);
+    this.setData({
+      TabCur: e.currentTarget.dataset.id,
+      scrollLeft: (e.currentTarget.dataset.id - 1) * 60
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const query = Bmob.Query("Fields");
+    query.include("sport_id")
+    query.find().then(res => {
+      console.log(res)
+    });
   },
 
   /**
