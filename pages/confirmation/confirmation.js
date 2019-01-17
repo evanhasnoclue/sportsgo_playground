@@ -1,5 +1,4 @@
-var Bmob = require('../../utils/Bmob-1.6.7.min.js')
-// pages/homepage/homepage.js
+// pages/confirmation/confirmation.js
 Page({
 
   /**
@@ -12,17 +11,9 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  showSport: function (e) {
-    wx.navigateTo({
-      url: '../mainpage/mainpage',
-    });
-  },
-
   onLoad: function (options) {
-    
 
   },
-
 
   /**
    * Lifecycle function--Called when page is initially rendered

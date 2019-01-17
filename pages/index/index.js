@@ -8,7 +8,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    sports: ["沙滩排球", "户外网球", "绿茵足球", "街头篮球"],
   },
 
 
@@ -16,8 +17,17 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })  
+  },
+
+  go: function () {
+    wx.navigateTo({
+      url: '../homepage/homepage'
     })
   },
+
+
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

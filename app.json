@@ -5,7 +5,8 @@
     "pages/profile/profile",
     "pages/homepage/homepage",
     "pages/playground/playground",
-    "pages/mainpage/mainpage"
+    "pages/mainpage/mainpage",
+    "pages/confirmation/confirmation"
 
   ],
   "window":{

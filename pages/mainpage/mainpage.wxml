@@ -6,8 +6,8 @@
       <view class="desc">
         <view class='text-content'> 这是一个专为你在阳光下展开双臂所准备的运动场所，了解一下就OK！</view>
         <view>
-          <tag class='bg-red light sm round'>5人场地</tag>
-          <tag class='bg-green light sm round'>10人场地</tag>
+          <!-- <tag class='bg-red light sm round'>5人场地</tag> -->
+          <tag class='bg-green light sm round'>场地介绍</tag>
         </view>
       </view>
     </view>
@@ -27,15 +27,15 @@
 
 <view class="cardp">
 <view class="left"><text class="time1">19:00-20:00</text></view>
-<view class="right"></view>
+<view class="right"><text class="require">￥37</text><button class='buttom-book'>预约</button></view>
 </view>
 
 <view class="cardp">
 <view class="left"><text class="time1">20:00-21:00</text></view>
-<view class="right"></view>
+<view class="right"><text class="require">￥47</text><button class='buttom-book'>预约</button></view>
 </view>
 
 <view class="cardp">
 <view class="left"><text class="time1">21:00-22:00</text></view>
-<view class="right"></view>
+<view class="right"><text class="require">￥47</text><button class='buttom-book'>预约</button></view>
 </view>
