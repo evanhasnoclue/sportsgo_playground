@@ -1,5 +1,6 @@
 var Bmob = require('../../utils/Bmob-1.6.7.min.js')
 // pages/show/show.js
+let app = getApp();
 Page({
 
   /**
@@ -13,10 +14,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this;
+    const sport_id = "Ey0b3334";
     const query = Bmob.Query('Sports')
-    query.field('Fields')
-    query.relation('Fields').then(res => {
-      console.log(res);
+    query.equalTo('objectId','==',sport_id)
+    query.find().then(res => {
+      console.log(1,res);
+      page.setData({
+        sport: res[0]
+      })
     })
   },
 
