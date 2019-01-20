@@ -1,2 +1,16 @@
 <!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
+<view class='container'>
+
+  <view class='banner' style="background-image: url({{sport.photo}});">
+
+  </view>
+
+  <view class='info-wrapper'>
+  <view class='info-card card'>
+  <view class='title font-title font-bold font-black'>{{sport.name}}</view>
+  </view>
+  </view>
+
+  <view class='reviews'>
+  </view>  
+</view>
