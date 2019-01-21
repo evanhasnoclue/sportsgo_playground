@@ -6,11 +6,22 @@
   </view>
 
   <view class='info-wrapper'>
-  <view class='info-card card'>
-  <view class='title font-title font-bold font-black'>{{sport.name}}</view>
-  </view>
+    <view class='info-card card'>
+      <view class='title-box'>
+        <view class='title font-title font-bold font-black'>{{sport.name}}</view>
+        <view class='rating'>*****</view>
+      </view>
+      <view class='location-box'>
+        <view class='location font-content font-grey'>{{sport.location}}</view>
+      </view>
+      <view class='des-box'>
+        <view class='description font-content font-gray'>{{sport.description}}</view>
+      </view>
+    </view>
   </view>
 
-  <view class='reviews'>
-  </view>  
+  <view class='review-wrapper'>
+  <view class='reviews card'>
+  </view>
+  </view>
 </view>
