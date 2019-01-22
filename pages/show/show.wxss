@@ -1,0 +1,84 @@
+/* pages/show/show.wxss */
+.container {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: felx;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+}
+
+.banner {
+  width: 100%;
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  margin: 20px 10px;
+  padding: 0 10px;
+}
+
+.review-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  margin: 20px 10px;
+  padding: 0 10px;
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.location-box {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.des-box {
+  margin: 0 10px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.reviews {
+  flex-grow: 1;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  flex-direction: column;
+}
+
+.font-title {
+  font-size: 30px;
+}
+
+.font-content {
+  font-size: 15px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-black {
+  color: black;
+}
+
+.font-gray {
+  color: gray;
+}

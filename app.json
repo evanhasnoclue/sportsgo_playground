@@ -6,6 +6,7 @@
     "pages/homepage/homepage",
     "pages/playground/playground",
     "pages/mainpage/mainpage",
+    "pages/show/show",
     "pages/confirmation/confirmation"
 
   ],
