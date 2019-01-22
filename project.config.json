@@ -58,18 +58,6 @@
 				},
 				{
 					"id": -1,
-					"name": "mainpage",
-					"pathName": "pages/playground/playground",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "mainpage",
-					"pathName": "pages/playground/playground",
-					"query": ""
-				},
-				{
-					"id": -1,
 					"name": "confirmation",
 					"pathName": "pages/confirmation/confirmation",
 					"query": ""

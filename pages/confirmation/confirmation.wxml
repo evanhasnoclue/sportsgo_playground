@@ -1,2 +1,78 @@
-<!--pages/confirmation/confirmation.wxml-->
-<text>pages/confirmation/confirmation.wxml</text>
+<card class="article1 {{isCard?'no-card':''}}">
+  <item class="shadow1">
+    <view class="title">确认报名信息</view>
+      <view class="free-all">
+        <view class="title">预约号</view>
+        <view class="title">1001</view>
+      </view>
+      <view class="free-all">
+        <view class="title">运动项目</view>
+        <view class="title">沙滩排球</view>
+      </view>
+      <view class="free-all">
+        <view class="title">日期</view>
+        <view class="title">1月17日</view>
+      </view>
+      <view class="free-all">
+        <view class="title">活动时间</view>
+        <view class="title">18：00 - 19：00</view>
+      </view>
+      <view class="free-all">
+        <view class="title">总价</view>
+        <view class="title">￥37</view>
+      </view>
+
+
+    <view class="content">
+    </view>
+  </item>
+</card>
+
+
+
+<!-- <view class="free-all">
+  <view>好好</view>
+  <view>笑笑</view>
+</view> -->
+
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 确认信息
+    </navigator>
+  </view>
+</view>
+<form>
+
+  <view class="cu-form-group margin-top">
+    <view class='title'>运动发起人</view>
+    <input placeholder="两字短标题" class='radius' name='input'></input>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>参与人数</view>
+    <input placeholder="三字标题" class='radius' name='input'></input>
+  </view>
+    <view class="cu-form-group">
+    <view class='title'>手机号码</view>
+    <input placeholder="输入框带标签" class='radius' name='input'></input>
+    <view class="cu-capsule radius">
+      <view class='cu-tag bg-blue '>
+        +86
+      </view>
+      <view class="cu-tag line-blue">
+        中国大陆
+      </view>
+    </view>
+  </view>
+  <!-- <view class="cu-form-group">
+    <view class='title'>收货地址</view>
+    <input placeholder="统一标题的宽度" class='radius' name='input'></input>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>收货地址</view>
+    <input placeholder="输入框带个图标" class='radius' name='input'></input>
+    <text class='icon-locationfill text-orange'></text>
+  </view> -->
+
+
+</form>

@@ -1,8 +1,9 @@
 <card class="article {{isCard?'no-card':''}}">
   <item wx:for="1" wx:key class="shadow">
-    <view class="title">沙滩排球</view>
+    <view class="title">{{clickSport.name}}</view>
     <view class="content">
-      <image src="http://entre-jeunes.com/rdl/wp-content/uploads/2016/08/volleyball-plage-2016.jpg" mode="aspectFill"></image>
+      <image src='{{clickSport.photo}}'
+      mode="aspectFill"></image>
       <view class="desc">
         <view class='text-content'> 这是一个专为你在阳光下展开双臂所准备的运动场所，了解一下就OK！</view>
         <view>
@@ -22,20 +23,20 @@
 
 <view class="cardp">
 <view class="left"><text class="time1">18:00-19:00</text></view>
-<view class="right"><text class="require">￥37</text><button class='buttom-book'>预约</button></view>
+<view class="right"><text class="require">￥37</text><button class='buttom-book' bindtap="bookingdetail">预约</button></view>
 </view>
 
 <view class="cardp">
 <view class="left"><text class="time1">19:00-20:00</text></view>
-<view class="right"><text class="require">￥37</text><button class='buttom-book'>预约</button></view>
+<view class="right"><text class="require">￥37</text><button class='buttom-book' bindtap="bookingdetail">预约</button></view>
 </view>
 
 <view class="cardp">
 <view class="left"><text class="time1">20:00-21:00</text></view>
-<view class="right"><text class="require">￥47</text><button class='buttom-book'>预约</button></view>
+<view class="right"><text class="require">￥47</text><button class='buttom-book' bindtap="bookingdetail">预约</button></view>
 </view>
 
 <view class="cardp">
 <view class="left"><text class="time1">21:00-22:00</text></view>
-<view class="right"><text class="require">￥47</text><button class='buttom-book'>预约</button></view>
+<view class="right"><text class="require">￥47</text><button class='buttom-book' bindtap="bookingdetail">预约</button></view>
 </view>

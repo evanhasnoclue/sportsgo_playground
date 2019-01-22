@@ -8,6 +8,12 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.getSystemInfo({
+      success: e => {
+        this.globalData.StatusBar = e.statusBarHeight;
+        this.globalData.CustomBar = e.platform == 'android' ? e.statusBarHeight + 50 : e.statusBarHeight + 45;
+      }
+    })
 
     // 登录
     wx.login({
@@ -38,5 +44,6 @@ App({
   },
   globalData: {
     userInfo: null
+  
   }
 })

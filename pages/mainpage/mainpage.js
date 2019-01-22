@@ -19,11 +19,26 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
+  onLoad: function (option) {
     const query = Bmob.Query("Fields");
     query.include("sport_id")
     query.find().then(res => {
-      console.log(res)
+    });  
+    const query3 = Bmob.Query('Sports');
+    let page = this;
+    query3.get(option.id).then(res => {
+      page.setData({clickSport:res});
+      console.log(page.data)
+    }).catch(err => {
+      console.log(err)
+    })
+
+    
+  },
+
+  bookingdetail: function (e) {
+    wx.navigateTo({
+      url: '../confirmation/confirmation',
     });
   },
 
