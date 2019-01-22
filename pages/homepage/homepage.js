@@ -9,19 +9,26 @@ Page({
 
   },
 
+
   /**
    * Lifecycle function--Called when page load
    */
   showSport: function (e) {
     wx.navigateTo({
-      url: '../mainpage/mainpage',
+      url: "../mainpage/mainpage?id=" + e.currentTarget.dataset.id,
     });
   },
 
   onLoad: function (options) {
-    
-
+    let page=this;
+    const query = Bmob.Query("Sports");
+    query.find().then(res => {
+      // console.log(res)
+      page.setData({sports:res})
+    });
   },
+
+  
 
 
   /**
