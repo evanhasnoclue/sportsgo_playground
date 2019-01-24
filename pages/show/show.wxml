@@ -21,7 +21,28 @@
   </view>
 
   <view class='review-wrapper'>
-  <view class='reviews card'>
-  </view>
+    <block wx:for="{{reviews}}" wx:for-item="review" wx:key="objectId">
+      <view class='reviews card'>
+        <view class='review-title'>
+          <view class='review-user'>
+            <view class='review-useravatar'>
+              {{review.booking_id.user_id.avatar}}
+            </view>
+            <view class='review-username'>
+              {{review.booking_id.user_id.nickname}}
+            </view>
+          </view>
+          <view class='review-rating'>
+          {{review.rating}}
+          </view>
+        </view>
+        <view class='review-content'>
+        {{review.comment}}
+        </view>
+        <view class='review-footer'>
+        {{review.createdAt}}
+        </view>
+      </view>
+    </block>
   </view>
 </view>
