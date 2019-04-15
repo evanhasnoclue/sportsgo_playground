@@ -44,13 +44,14 @@ Page({
             query_review.find().then(res => {
               console.log(4,res)
               reviews.push(res[0])
+              page.setData({
+                reviews: reviews
+              })
             })
           })
         })
       })
-    })
-    page.setData({
-      reviews:reviews
+
     })
   },
 

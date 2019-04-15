@@ -30,6 +30,31 @@
   padding: 0 10px;
 }
 
+.reviews-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-user {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-username {
+  flex-grow:1;
+}
+
+.review-useravatar {
+  flex-grow:1;
+}
+
+.review-rating {
+  width: 30%;
+}
+
 .title-box {
   display: flex;
   justify-content: space-between;
