@@ -15,10 +15,24 @@ Page({
    */
 
   onLoad: function (options) {
-    const query = Bmob.Query("_User");
-    query.find().then(res => {
+    let page = this
+    const query = Bmob.Query("Users");
+    query.get('5Q0pJJJG').then(res => {
       console.log(res)
+      page.setData({
+        user_info: res
+      })
     });
+    const bookings = Bmob.Query('Booking_slots');
+    bookings.include('booking_id','field_id','field_id.sport_id')
+    bookings.statTo("where", '{"booking_id":{"$inQuery":{"where":{"user_id":"5Q0pJJJG"},"className":"Bookings"}}}');
+    bookings.order('-createdAt')
+    bookings.find().then(res => {
+      console.log('bookings',res)
+      page.setData({
+        bookings: res
+      })
+    })
   },
 
   /**

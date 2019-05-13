@@ -1,65 +1,42 @@
-<view class="weui-cell">
-  <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
-    <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKwqOJ6wnhce5LzwvX6nqI2vUibaicb4pwNEJtzQ69y3j4IHibQq4VbK89jskysU2Hkndk3ZJaSt849A/132" style="width: 50px; height: 50px; display: block" />
+<view class='wrapper'>
+  <view class='profile'>
+    <view class='user-info'>
+      <view class='avatar' style="background-image: url({{user_info.avatar}})"></view>
+      <view class='nickname font-title'>{{user_info.nickname}}</view>
+      <view class='info'>
+        <view class='city font-content'>{{user_info.city}}</view>
+        <view class='gender'>
+          <block wx:if="{{user_info.gender=='Male'}}">
+            <image class='icon' src='../../images/man.png' />
+          </block>
+          <block wx:else>
+            <image class='icon' src='../../images/woman.png' />
+          </block>
+        </view>
+      </view>
+    </view>
   </view>
-  <view class="weui-cell__bd">
-    <view style="margin-top: 10px; display:flex">ada</view> 
-    <view style="display:flex;">
-    <text style="font-size: 15px;color: #585858;">shanghai</text>
-  <view> <image src="../../images/woman.png" style="width:20px;height:20px"/></view>
+  <view class='bookings'>
+    <view class='my-bookings font-title'>我的预约</view>
+    <view class='cards'>
+      <block wx:for='{{bookings}}' wx:for-item='booking' wx:key='the_booking'>
+        <view class='date font-content font-grey'>{{booking.date.iso}}</view>
+        <view class='card'>
+          <view class='statusline'>
+            <view class='sports font-content'>运动：{{booking.field_id.sport_id.name}}</view>
+            <view class='status font-content'>预约状态：</view>
+          </view>
+          <view class='card-body'>
+          <view class='details'>
+            <view class='field font-content'>场地：{{booking.field_id.name}}</view>
+            <view class='time font-content'>场次：{{booking.start_time}} - {{booking.end_time}}</view>
+          </view>
+          <view class='check'>
+            <view class='btn font-content'>查看</view>
+          </view>
+          </view>
+        </view>
+      </block>
+    </view>
   </view>
-</view>
-</view>
-
-<view>
-<scroll-view class="box" scroll-x="true" >
-  <view class="col">
-    <view class="box-item-s" >6:00-7:00</view>
-    <view class="box-item-s" >7:00-8:00</view>
-    <view class="box-item-s" >8:00-9:00</view>
-    <view class="box-item-s" >9:00-10:00</view>
-  </view>
-  <view class="col">
-    <view class="box-item" >1</view>
-    <view class="box-item" >1</view>
-    <view class="box-item" >1</view>
-    <view class="box-item" >1</view>
-  </view>
-  <view class="col">
-    <view class="box-item" >2</view>
-    <view class="box-item" >2</view>
-    <view class="box-item" >2</view>
-    <view class="box-item" >2</view>
-  </view>
-   <view class="col">
-    <view class="box-item" >3</view>
-    <view class="box-item" >3</view>
-    <view class="box-item" >3</view>
-    <view class="box-item" >3</view>
-  </view>
-   <view class="col">
-    <view class="box-item" >4</view>
-    <view class="box-item" >4</view>
-    <view class="box-item" >4</view>
-    <view class="box-item" >4</view>
-  </view>
-   <view class="col">
-    <view class="box-item" >5</view>
-    <view class="box-item" >5</view>
-    <view class="box-item" >5</view>
-    <view class="box-item" >5</view>
-  </view>
-   <view class="col">
-    <view class="box-item" >6</view>
-    <view class="box-item" >6</view>
-    <view class="box-item" >6</view>
-    <view class="box-item" >6</view>
-  </view>
-  <view class="col">
-    <view class="box-item" >7</view>
-     <view class="box-item" >7</view>
-      <view class="box-item" >7</view>
-     <view class="box-item" >7</view>
-  </view>
-</scroll-view>
 </view>
